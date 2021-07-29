@@ -109,7 +109,8 @@ button {
   justify-content: space-between;
   z-index: 2;
   backdrop-filter: blur(4px);
-  height: 50px;
+  height: 70px;
+  border-bottom: 1px solid rgb(206, 206, 206);
 }
 .cardBlur{
  filter: blur(3px)
@@ -134,13 +135,16 @@ button {
 }
 .card{
   border-radius: 10px;
-  box-shadow:  5px 5px 7px black;
+  box-shadow:  5px 5px 7px rgb(0, 0, 0);
   margin: 20px 10px 0px 10px;
   width: 300px;
   min-height: 400px;
+  backdrop-filter: blur(2px);
+
   /* background-color: rgba(190, 183, 183, 0.719); */
-  background-image: url("https://img-fotki.yandex.ru/get/897139/160997575.8e/0_16f0e2_5971d713_orig.gif");
+  /* background-image: url("https://img-fotki.yandex.ru/get/897139/160997575.8e/0_16f0e2_5971d713_orig.gif"); */
 }
+
 .format-toolbar {
   width: 100%;
 display: flex;
@@ -219,13 +223,20 @@ margin: 0 auto;
 }
 .song{
   margin-top: 10px;
+  margin-right: 40px;
   cursor: pointer;
   font-size: 24px;
   margin-left: 50px;
   color: #5fe7be;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 50px;
+  box-shadow: 0 0 3px #5fe7be,0 0 8px #5fe7be,0 0 13px #5fe7be,0 0 18px #5fe7be,0 0 23px #5fe7be,0 0 28px #5fe7be;
 }
 .color{
   color: red;
+  box-shadow: 0 0 3px red,0 0 10px red,0 0 17px red,0 0 24px red;
 }
 .renameDiv{
   width: 300px;
@@ -273,4 +284,19 @@ background-color: red;
 }
 .renameDivTogle{
   display: flex;
+}
+.darkLight{
+  min-height: 100vh;
+}
+.darkLightToggle{
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+.changeContainerTheme{
+  box-shadow: 0 0 5px white,0 0 10px white,0 0 15px white,0 0 20px white;
+}
+
+.cardToggle{
+  box-shadow:  0px 0px 7px white,0px 0px 12px white,0px 0px 14px white;
+
 }

@@ -20,7 +20,7 @@ const App = (props) => {
     authListener()
   }, [])
   return (
-    <div>
+    <div className="WorkplaceWraper">
       {
         props.user ? <Workplace /> : <Login />
       }
